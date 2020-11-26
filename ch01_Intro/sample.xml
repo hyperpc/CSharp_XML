@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- This is a comment. -->
+<families>
+    <family ID="1001">
+        <father>Tom Smith
+            <child>
+                <name>John Smith</name>
+                <gender>male</gender>
+            </child>
+            <history keywords="long,story">
+                This is a very long story...
+            </history>
+            <sampleSection>This is a html page
+                <![CDATA[ 
+                <html>
+                    <head>
+                        <title>title</title>
+                    </head>
+                    <body>
+                        Hello XML!
+                    </body>
+                </html>
+                ]]>
+            </sampleSection>
+        </father>
+    </family>
+    <family ID="1002" xmlns:h="http://www.sample.com/">
+        <h:father>Tom Green
+            <h:child>
+                <h:name>Jane Green</h:name>
+                <gender>female</gender>
+            </h:child>
+            <history keywords="another,story">
+                This is another long story...
+            </history>
+            <sampleSection/>
+        </h:father>
+    </family>
+</families>
