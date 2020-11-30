@@ -28,3 +28,16 @@ DOM(Document Object Model)支持XPath查询。
 XSLT(Extensible Stylesheet Language Transformations)可扩展样式表转换语言，将XML文档转换为其他文本文档的语言，建立在XML和XPath之上的国际标准。  
 
 ## 第2章 使用DOM操作XML
+
+XmlDocument, XmlProcessingInstruction, XmlElement, XmlAttribute, XmlText, XmlNode  
+Load()/ LoadXml(), GetElementByTagName(), GetElementById(), SelectNodes(), SelectSingleNode()  
+Save(Console.Out), CreateDocumentFragment/CreateElement/CreateAttribute/SetAttributeNode/CreateCDataSection/CreateComment(), AppendChild(), InnerXml/ InnerText,  
+RemoveAll()/ ReplaceChild(), InsertAfter/ FirstChild/ LastChild / PreserveWhitespace/ NamespaceURI/ Prefix/ LocalName  
+
+```xml
+    <cust:customers xmlns:cus="http://www.customerservice.com">  
+    </cust:customers>
+```
+
+NodeChanging/ NodeChanged/ NodeInserting/ NodeInserted/ NodeRemoving/ NodeRemoved  
+Action/ OldParent/ NewParent/ OldValue/ NewValue/ Node  
