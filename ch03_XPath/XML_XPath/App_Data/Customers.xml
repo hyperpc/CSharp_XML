@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE customers [
+    <!ELEMENT customers ANY>
+    <!ELEMENT customer ANY>
+    <!ELEMENT firstname ANY>
+    <!ELEMENT lastname ANY>
+    <!ELEMENT homephone ANY>
+    <!ELEMENT notes ANY>
+    <!ATTLIST customer id ID #REQUIRED>
+]>
+<customers>
+    <customer id="1">
+        <firstname>John</firstname>
+        <lastname>Cranston</lastname>
+        <homephone>(445) 269-9857</homephone>
+        <notes>
+            <![CDATA[He registed as our member since 1990. John has nice credity. He is a member of Custom International.]]>
+        </notes>
+    </customer>
+    <customer id="2">
+        <firstname>Annie</firstname>
+        <lastname>Loskar</lastname>
+        <homephone>(445) 269-9482</homephone>
+        <notes>
+            <![CDATA[Annie registed as our member since 1984. She became our VIP customer in 1996.]]>
+        </notes>
+    </customer>
+    <customer id="3">
+        <firstname>Annie</firstname>
+        <lastname>Christo</lastname>
+        <homephone>(445) 269-3412</homephone>
+        <notes>
+            <![CDATA[Bernie registed as our member since 2010. He is a new member.]]>
+        </notes>
+    </customer>
+    <customer id="4">
+        <firstname>Ernestine</firstname>
+        <lastname>Borrison</lastname>
+        <homephone>(445) 269-7742</homephone>
+        <notes>
+            <![CDATA[Ernestine registed as our member since 2010. She is a new member.]]>
+        </notes>
+    </customer>
+</customers>

@@ -2,7 +2,7 @@
 using System;
 using System.Xml;
 using System.Configuration;
-
+//dotnet add package System.Configuration.ConfigurationManager --version 4.7.0
 namespace XML_Dom
 {
     class Program

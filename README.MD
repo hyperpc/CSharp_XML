@@ -2,6 +2,8 @@
 
 ![Cover](IMG/CSharp_XML.jpg)
 
+> 说明：本源码并未使用书中Windows应用的实现方式，而是基于.NET Core 3.1的控制台应用  
+
 ## 第1章 XML简介
 
 属性：元数据
@@ -41,3 +43,76 @@ RemoveAll()/ ReplaceChild(), InsertAfter/ FirstChild/ LastChild / PreserveWhites
 
 NodeChanging/ NodeChanged/ NodeInserting/ NodeInserted/ NodeRemoving/ NodeRemoved  
 Action/ OldParent/ NewParent/ OldValue/ NewValue/ Node  
+
+## 第3章 应用XPath操作XML文档
+
+> System.Xml.XPath;
+
+常用路径表达式
+|表达式|注释|
+|:----|:----|
+|nodename|选取该节点下的所有子节点|
+|/|选取根节点|
+|//|选取文档中所有符合条件的节点|
+|.|选取当前节点|
+|..|选取当前节点的父节点|
+|@|选取属性|
+|/book[1]|选取找到的第一个book元素|
+|/book[last()]|选取找到的最后一个book元素|
+|/book[last()-1]|选取找到的倒数第二个book元素|
+|/book[position() < 3]|选取找到的前两个book元素|
+|//title/text()='XML'|选取所有title的文本是XML的元素|
+|//title[@lang]|选取所有包含lang属性的title元素|
+|//title[@lang='eng']|选取所有包含lang属性并且等于eng的title元素|
+|/book[price<35]/title|选取price小于35的book元素的title|
+|//title\|//book/price|选取所有title元素和所有book节点的price元素|
+|*|通配符，任意的节点元素|
+|@*|通配符，任意的节点属性|
+|node()|匹配任意种类的节点|
+
+|XPath轴名称|结果|
+|:----|:----|
+|self|选取当前节点|
+|ancestor|选取当前节点的所有先辈节点，如ancestor::book|
+|ancestor-or-self|选取当前节点的所有先辈节点，包括当前节点|
+|attribute|选取当前节点的所有属性，如attribute:: *|
+|parent|选取当前节点的所有父节点|
+|child|选取当前节点的所有子元素，如child::text(), child:: */child::price选取所有孙节点price|
+|descendant|选取当前节点的所有后代元素|
+|descendant-or-self|选取当前节点的所有后代元素，包括当前节点|
+|preceding|选取当前节点的开始标签之前的所有节点|
+|preceding-sibling|选取当前节点的开始标签之前的所有同级节点|
+|following|选取当前节点结束标签之后的所有节点|
+|namespace|选取当前节点的所有命名空间节点|
+
+|运算符|描述|
+|:----|:----|
+|\||计算两个节点集合|
+|+|加法|
+|-|减法|
+|*|乘法|
+|div|除法|
+|=|等于|
+|!=|不等于|
+|<|小于|
+|<=|小于等于|
+|>|大于|
+|>=|大于等于|
+|or|或|
+|and|与|
+|mod|取余|
+
+XPath和XSLT、XQuery等共享函数库，包括存取函数，错误和跟踪函数，数值函数，字符串函数，时间函数，上下文函数，节点函数，布尔函数，和一般性函数，另外还有测试序列容量的函数，与QNames相关的函数，合计函数和生成序列的函数。  
+参考文档：[W3Schools], [MDN]  
+
+[W3Schools]: https://www.w3schools.com/xml/xsl_functions.asp  
+[MDN]: https://developer.mozilla.org/en-US/docs/Web/XPath
+
+XPathNavigator/ IXPathNavigator,  
+XmlDocument.CreateNavigator()(可编辑Xml),  
+XPathDocument.CreateNavigator()(只读Xml)  
+XPathNavigator.Select()/SelectSingleNode()/SelectChildren()/SelectAncestors()/SelectDescendants()  
+/MoveToAttribute()/MoveToFirstAttribute()/MoveToNextAttribute()/MoveToParent()/MoveToContent()  
+/Compile()/InnerXml/OuterXml  
+GetAttribute("id","")/ ReadSubtree()/ XmlWriter.Create()  
+SetValue()/ DeleteSelf()  
