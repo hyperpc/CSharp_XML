@@ -116,3 +116,16 @@ XPathNavigator.Select()/SelectSingleNode()/SelectChildren()/SelectAncestors()/Se
 /Compile()/InnerXml/OuterXml  
 GetAttribute("id","")/ ReadSubtree()/ XmlWriter.Create()  
 SetValue()/ DeleteSelf()  
+
+## 第4章 用XSLT转换XML文档
+
+XSLT: Extensible Stylesheet Language Transformation  
+XSL => XSLT和XSL-FO  
+
+xsl:stylesheet/ xsl:transform,  
+xsl:template, xsl:apply-templates, value-of/copy-of,  
+disable-output-escaping="yes", <br></br>,  
+xsl:for-each/ xsl:if/ xsl:sort/ xsl:choose/ xsl:when/ xsl:otherwise  
+xslt whitespace: &#160;  
+xsl:param  
+XslCompiledTransform, XsltArgumentList, XsltSettings  

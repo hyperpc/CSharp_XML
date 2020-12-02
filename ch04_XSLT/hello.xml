@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<?xml-stylesheet href="hello.xsl" type="text/xsl"?>
+-->
+<?xml-stylesheet href="hello2.xsl" type="text/xsl"?>
+<greeting>Hello, World!</greeting>
