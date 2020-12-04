@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+    <customer id="5">
+        <firstname>Young</firstname>
+        <lastname>Bob</lastname>
+        <balance>200.00</balance>
+        <country>china</country>
+        <homephone>1234567890200000000000000000000001111111111111111111111</homephone>
+        <notes>
+            <![CDATA[This file cannot pass validation.]]>
+        </notes>
+    </customer>
+</customers>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT customers (customer*)>
+<!ELEMENT customer (firstname, lastname, balance, country, homephone, notes)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT balance (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT homephone (#PCDATA)>
+<!ELEMENT notes (#PCDATA)>
+<!ATTLIST customer id CDATA #REQUIRED>

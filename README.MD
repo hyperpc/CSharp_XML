@@ -129,3 +129,22 @@ xsl:for-each/ xsl:if/ xsl:sort/ xsl:choose/ xsl:when/ xsl:otherwise
 xslt whitespace: &#160;  
 xsl:param  
 XslCompiledTransform, XsltArgumentList, XsltSettings  
+
+## 第5章 验证XML文档
+
+DTD: Document Type Definitions  
+XDR: XML Data Reduced
+XSD: XML Schema Definition  
+
+xsd:schema, xsd:element, xsd:complexType (mixed), xsd:attribute  
+xsd:sequence, xsd:all, xsd:choice  
+> DataType:
+> boolean, datetime, decimal, string, int,  
+> nonNegativeInteger, nonPositiveInteger, short  
+
+> Restriction:  
+> enumeration, fractionDigit, length, minExclusive, maxExclusive,  
+> minLength, maxLength, minInclusive, maxInclusive, pattern, totalDigits, whiteSpace  
+
+xsd:simpleType, xsd:restriction, xsd:enumeration, xsd:list, xsd:union,  
+xsd:any, xsd:complexContent, xsd:anyType  
