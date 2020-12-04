@@ -148,3 +148,14 @@ xsd:sequence, xsd:all, xsd:choice
 
 xsd:simpleType, xsd:restriction, xsd:enumeration, xsd:list, xsd:union,  
 xsd:any, xsd:complexContent, xsd:anyType  
+
+## 第6章 读/写XML文档
+
+XmlReader: XmlTextReader, XmlNodeReader, XmlValidatingReader  
+XmlWriter: XmlTextWriter  
+
+XmlReader.Create(), XmlReaderSettings  
+XmlWriter.Create(), XmlWriterSettings  
+WriteStartDocument(), WriteStartElement(), WriteEndElement(),  
+WriteAttributeString(), WriteElementString(), WriteString(), WriteCData(),  
+Flush()  
