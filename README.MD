@@ -2,7 +2,8 @@
 
 ![Cover](IMG/CSharp_XML.jpg)
 
-> 说明：本源码并未使用书中Windows应用的实现方式，而是基于.NET Core 3.1的控制台应用  
+> 说明：本源码并未使用书中Windows应用的实现方式，而是基于.NET Core 3.1的控制台应用.
+> Happy coding!!!  
 
 ## 第1章 XML简介
 
@@ -159,3 +160,34 @@ XmlWriter.Create(), XmlWriterSettings
 WriteStartDocument(), WriteStartElement(), WriteEndElement(),  
 WriteAttributeString(), WriteElementString(), WriteString(), WriteCData(),  
 Flush()  
+
+## 第7章 XML和ADO.NET
+
+SqlCommand.ExecuteXmlReader(), "Select xxx From Table For XML Raw/Auto/Path/Explicit, Elements"  
+DataAdapter.Fill(DataSet, "Table"),  
+DataSet.WriteXml(filefullpath, XmlWriteMode.IgnoreSchema),  
+DataSet.WriteXmlSchema(filefullpath),  
+XmlWriteMode.IgnoreSchema/WriteSchema/DiffGram  
+
+DataSet.ReadXml(filefullpath)/ReadXmlSchema()/InferXmlSchema()  
+DataSet < = > XmlDataDocument < = > XmlDocument  
+'XmlDataDocument' is obsolete,  
+XslCompiledTransform, GetElementFromRow()  
+
+## 第8章 WCF与XML
+
+WCF: Windows Communication Foundation  
+SOA: Service Oriented  Architecture  
+ServiceClass, Host, EndPoints(ABC: Address, Binding, Contract)  
+
+> Two ways to create and using WCF:
+> 1: Visual Studio
+> 2: Visual Studio + SvcUtil.exe
+> Note: .Net Core not support wcf anymore, you can using wcf via .Net Framework instead.
+> And the sample in book is using sql server as backend db, my sample using xml file instead.
+
+WSDL: Web Service Description Language  
+
+## 第9章 LINQ与XML
+
+LINQ: Language Integrated Query  

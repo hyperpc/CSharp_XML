@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Customers.xsd">
+    <customer id="6">
+        <firstname>Young</firstname>
+        <lastname>Bob2</lastname>
+        <balance>200.06</balance>
+        <country>china</country>
+        <homephone>12345678903</homephone>
+        <notes>&lt;![CDATA[This file can pass 6 validation.]]&gt;</notes>
+    </customer>
+    <customer id="7">
+        <firstname>Young</firstname>
+        <lastname>Bob3</lastname>
+        <balance>200.07</balance>
+        <country>china</country>
+        <homephone>12345678904</homephone>
+        <notes><![CDATA[This file can pass 7 validation.]]></notes>
+    </customer>
+</customers>

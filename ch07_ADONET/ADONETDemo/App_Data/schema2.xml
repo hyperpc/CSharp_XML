@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <xs:element name="customers">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="customer">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="firstname">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:minLength value="3" />
+                                            <xs:maxLength value="255" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="lastname">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:minLength value="3" />
+                                            <xs:maxLength value="255" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="balance">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:minLength value="0" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="country">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string" />
+                                    </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="homephone">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:maxLength value="25" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="notes">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:maxLength value="500" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                            </xs:sequence>
+                            <xs:attribute name="id" type="xs:int" use="required" />
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+    </xs:schema>
+    <customer id="5">
+        <firstname>Young</firstname>
+        <lastname>Bob</lastname>
+        <balance>200.00</balance>
+        <country>china</country>
+        <homephone>12345678902</homephone>
+        <notes>
+            <![CDATA[This file cannot pass validation.]]>
+        </notes>
+    </customer>
+</customers>
