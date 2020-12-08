@@ -2,6 +2,7 @@
 using System.Configuration;
 using System.Data;
 
+//dotnet add package System.Configuration.ConfigurationManager --version 4.7.0
 namespace CustomerLibrary
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "ICustomerService" in both code and config file together.
