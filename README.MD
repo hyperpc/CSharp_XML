@@ -191,3 +191,9 @@ WSDL: Web Service Description Language
 ## 第9章 LINQ与XML
 
 LINQ: Language Integrated Query  
+XLINQ: LINQ to XML  
+
+var, Lambda=>, let  
+XDocument, XElement, XAttribute, XNamespace,
+XElement.Parse(string), Array.ForEach(), XElement.AddAnnotation(string)  
+XmlSchemaSet, XElement.NamespaceName/Name/Name.ToString(), LoadOptions/SaveOptions  

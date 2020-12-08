@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xsd:simpleType name="NotesType">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="500"></xsd:maxLength>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="NameType">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="3"></xsd:minLength>
+            <xsd:maxLength value="255"></xsd:maxLength>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="BalanceType">
+        <xsd:restriction base="xsd:decimal">
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="CountryType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="china"></xsd:enumeration>
+            <xsd:enumeration value="usa"></xsd:enumeration>
+            <xsd:enumeration value="england"></xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="handphone" type="xsd:string" substitutionGroup="homephone"></xsd:element>
+    <xsd:element name="homephone" type="xsd:string"></xsd:element>
+    <xsd:complexType name="CustomerType">
+        <xsd:all>
+            <xsd:element name="firstname" type="NameType"></xsd:element>
+            <xsd:element name="lastname" type="NameType"></xsd:element>
+            <xsd:element name="balance" type="BalanceType"></xsd:element>
+            <xsd:element  name="country" type="CountryType" fixed="china"></xsd:element>
+            <xsd:element ref="homephone" ></xsd:element>
+            <xsd:element name="notes" type="NotesType"></xsd:element>
+        </xsd:all>
+        <xsd:attribute name="id" type="xsd:int" use="required"></xsd:attribute>
+    </xsd:complexType>
+    <xsd:element name="customers">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="customer" type="CustomerType" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
