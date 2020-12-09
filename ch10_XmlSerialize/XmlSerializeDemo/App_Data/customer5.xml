@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Customer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CustomerId="5">
+  <FName>Young</FName>
+  <LName>Bob5</LName>
+  <Remarks />
+  <CustomerType>Personal Customer</CustomerType>
+  <EmailAddresses>
+    <Email>yp1@test.com</Email>
+    <Email>yp2@test.com</Email>
+  </EmailAddresses>
+  <MyAddress xsi:nil="true" />
+</Customer>

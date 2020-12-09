@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<VIPCustomer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CustomerId>5</CustomerId>
+  <FirstName>Young</FirstName>
+  <LastName>Bob5</LastName>
+  <Balance>100.05</Balance>
+  <Country>china</Country>
+  <Homephone>12345678905</Homephone>
+  <Notes />
+  <Type>Personal</Type>
+  <Emails>
+    <string>yp1@test.com</string>
+    <string>yp2@test.com</string>
+  </Emails>
+  <MyAddress>
+    <Postcode>610001</Postcode>
+    <City>CD</City>
+  </MyAddress>
+  <VIPNo>2020001</VIPNo>
+</VIPCustomer>

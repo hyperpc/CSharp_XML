@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlSerializeDemo", "XmlSerializeDemo.csproj", "{D7D304C6-442F-4960-83D3-D32F384F6783}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7D304C6-442F-4960-83D3-D32F384F6783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D304C6-442F-4960-83D3-D32F384F6783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D304C6-442F-4960-83D3-D32F384F6783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D304C6-442F-4960-83D3-D32F384F6783}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D095E75-47B6-4E96-A111-1E241AE2DAA4}
+	EndGlobalSection
+EndGlobal

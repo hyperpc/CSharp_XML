@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="schema.xsd">
+    <customer id="1">
+        <firstname>John</firstname>
+        <lastname>Cranston</lastname>
+        <balance>110.00</balance>
+        <country>china</country>
+        <homephone>(445) 269-9857</homephone>
+        <notes>
+            <![CDATA[He registed as our member since 1990. John has nice credity. He is a member of Custom International.]]>
+        </notes>
+    </customer>
+    <customer id="2">
+        <firstname>Annie</firstname>
+        <lastname>Loskar</lastname>
+        <balance>112.00</balance>
+        <country>china</country>
+        <handphone>12345678901</handphone>
+        <notes>
+            <![CDATA[Annie registed as our member since 1984. She became our VIP customer in 1996.]]>
+        </notes>
+    </customer>
+    <customer>
+        <firstname>Annie</firstname>
+        <lastname>Christo</lastname>
+        <balance>113.00</balance>
+        <country>china</country>
+        <handphone>12345678902</handphone>
+        <notes>
+            <![CDATA[Bernie registed as our member since 2010. He is a new member.]]>
+        </notes>
+    </customer>
+    <customer id="4">
+        <firstname>Ernestine</firstname>
+        <lastname>Borrison</lastname>
+        <balance>114.00</balance>
+        <country>china</country>
+        <homephone>(445) 269-7742</homephone>
+        <notes>
+            <![CDATA[Ernestine registed as our member since 2010. She is a new member.]]>
+        </notes>
+    </customer>
+</customers>
