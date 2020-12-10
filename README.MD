@@ -197,3 +197,22 @@ var, Lambda=>, let
 XDocument, XElement, XAttribute, XNamespace,
 XElement.Parse(string), Array.ForEach(), XElement.AddAnnotation(string)  
 XmlSchemaSet, XElement.NamespaceName/Name/Name.ToString(), LoadOptions/SaveOptions  
+
+## 第10章 XML序列化
+
+序列化: 将驻留在内存中的对象转换为容易传输的格式的过程  
+反序列化: 根据六重新构造对象  
+三种形式：二进制序列化，XML序列化， SOAP序列化  
+深序列化：序列化类的所有成员，甚至嵌套类及其所有成员，如二进制序列化  
+浅序列化：进序列化类的公共成员，如XML序列化  
+
+XmlSerializer, XmlSerializer.Serialize()/Deserialize(),  
+UnknownAttribute/UnknownNode/UnknownElement,  
+> System.Xml.Serialization:
+> XmlRootAttribute(), XmlAttributeAttribute(), XmlElementAttribute(), XmlIgnoreAttribute(),  
+> XmlArrayAttribute(), XmlArrayItemAttribute(), XmlEnumAttribute()  
+
+SOAP: Simple Object Access Protocol  
+> .Net Framework: System.Runtime.Serialization.Formatters.Soap:
+> [Serializable], SoapFormatter(), formatter.Serialize()/Deserialize()  
+> [OnSerializingAttribute], [OnSerializedAttribute], [OnDeserializeAttribute], [OnDeserializeAttribute]  
