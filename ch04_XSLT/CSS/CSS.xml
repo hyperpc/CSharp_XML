@@ -1,0 +1,13 @@
+<?xml-stylesheet href="#style" type="text/css"?>
+<Root>
+    <Extras id="style">
+        Headline {font-size:x-large; color: #aaa;}
+        Author, Para {display: block; color: #d0f;}
+        Extras {display: none;}
+    </Extras>
+    <Article>
+        <Headline>India My Country</Headline>
+        <Author>Om Sao</Author>
+        <Para>India is a beautiful South Asian Country which is surrounded byOceans in three sides.</Para>
+    </Article>
+</Root>

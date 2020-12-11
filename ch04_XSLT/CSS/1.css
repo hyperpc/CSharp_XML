@@ -1,0 +1,31 @@
+products{
+    font-size: 80%;
+    margin: 0.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+}
+product{
+    display: block;
+    border: 1px solid silver;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: whitesmoke;
+}
+name, price, stock, country{
+    display: block;
+}
+price{
+    color: green;
+}
+stock{
+    color: brown;
+}
+country{
+    color: blue;
+}
+#p4{
+    text-align: right;
+}
+.special{
+    background-color: mistyrose;
+}

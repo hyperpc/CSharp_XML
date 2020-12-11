@@ -125,11 +125,15 @@ XSL => XSLT和XSL-FO
 
 xsl:stylesheet/ xsl:transform,  
 xsl:template, xsl:apply-templates, value-of/copy-of,  
-disable-output-escaping="yes", <br></br>,  
+disable-output-escaping="yes", &lt;br&gt;&lt;/br&gt;,  
 xsl:for-each/ xsl:if/ xsl:sort/ xsl:choose/ xsl:when/ xsl:otherwise  
-xslt whitespace: &#160;  
+xslt whitespace: \&#160;  
 xsl:param  
 XslCompiledTransform, XsltArgumentList, XsltSettings  
+
+> CSS:  
+> Cascading Style Sheet  
+> Xml inner css only effect in FireFox.  
 
 ## 第5章 验证XML文档
 

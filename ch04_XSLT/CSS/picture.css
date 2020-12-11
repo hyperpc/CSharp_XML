@@ -1,0 +1,19 @@
+title{
+    display: block;
+}
+author{
+    display: block;
+}
+price{
+    display: block;
+}
+discretion{
+    display: block;
+}
+picture{
+    display: block;
+    width: 140px;
+    height: 208px;
+    background: url(picture/lyf.jpg);
+    background-size: contain;
+}

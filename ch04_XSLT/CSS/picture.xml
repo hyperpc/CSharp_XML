@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="picture.css" type="text/css"?>
+<books>
+    <book>
+        <title>ASP.NET Core 3</title>
+        <picture/>
+        <discretion>
+            This book is different from the rest. It doesn't pretend to be a complete reference. It won't waste your time with hundreds of pages on every obscure feature of ASP.NET Core. And it won't insult your intelligence by suggesting that it contains every last detail of ASP.NET Core.
+        </discretion>
+    </book>
+</books>

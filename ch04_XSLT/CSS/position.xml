@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="position.css" type="text/css"?>
+<position>
+    <root>
+        root
+        <frame1>
+            Element1
+            <frame2>Element2</frame2>
+        </frame1>
+        <frame3>Element3</frame3>
+    </root>
+</position>
